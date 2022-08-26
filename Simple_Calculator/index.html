@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="first.js" defer></script>
+
+    <center>
+        <div>
+        <h1><i>CALCULATOR</i></h1>
+        
+        <table class="calculator" cellspacing="0" cellpadding="8" border="1px solid black">
+                <!--Display-->
+                <td colspan="6"><input id="display" style="text-align:right" size="25" maxlength="50"></td>
+                <!--Row 1-->
+                <tr>
+                    <td><input type="button" name="lp" value="#n" onclick="rand()"></td>
+                    <td><input type="button" name="rp" value="#int" onclick="randInt()"></td>
+                    <td><input type="button" name="dn" value="DN" onclick="alert('You have Pressed The DO NOTHING Button!')"></td>
+                    <td><input type="button" class="trig" value="sin" onClick="sin()"></td>
+                    <td><input type="button" id="del" value="DEL" onClick="dele()"></td>
+                    <td><input type="button" id="b1" value="AC" onclick="clr()"></td>
+                </tr>
+                <!--Row 2-->
+                <tr>
+                    <td><input type="button" name="lp" value="(" onclick="dis('( ')"></td>
+                    <td><input type="button" name="rp" value=")" onclick="dis(') ')"></td>
+                    <td><input type="button" value="&percnt;" onclick="percnt()"></td>
+                    <td><input type="button" class="trig" value="cos" onClick="cos()"></td>
+                    <td><input type="button" class="r2" value="X &sup2;" onclick="sq()"></td>
+                    <td><input type="button" class="r2" value="ln" onclick="log_e()"></td>
+                </tr>
+                <!--Row 3-->
+                <tr>
+                    <td><input type="button" class="numb"value="7" onclick="dis(7)"></td>
+                    <td><input type="button" class="numb"value="8" onclick="dis(8)"></td>
+                    <td><input type="button" class="numb"value="9" onclick="dis(9)"></td>
+                    <td><input type="button" class="trig" value="tan" onClick="tan()"></td>
+                    <td><input type="button" class="r2" value="&radic;" onclick="sqrt()"></td>
+                    <td><input type="button" class="r2" value="log" onclick="log_10()"></td>
+                    
+                </tr>
+                <!--Row 4-->
+                <tr>
+                    <td><input type="button" class="numb"value="4" onclick="dis(4)"></td>
+                    <td><input type="button" class="numb"value="5" onclick="dis(5)"></td>
+                    <td><input type="button" class="numb"value="6" onclick="dis(6)"></td>
+                    <td><input type="button" class="trig" value="asin" onClick="a_sin()"></td>
+                    <td><input type="button" class="art" value="&times;" onclick="dis('*')"></td>
+                    <td><input type="button" class="art" value="&divide;" onclick="dis('/')"></td>
+                </tr>
+                <!--Row 5-->
+                <tr>
+                    <td><input type="button" class="numb" value="1" onclick="dis(1)"></td>
+                    <td><input type="button" class="numb"value="2" onclick="dis(2)"></td>
+                    <td><input type="button" class="numb"value="3" onclick="dis(3)"></td>
+                    <td><input type="button" class="trig" value="acos" onClick="a_cos()"></td>
+                    <td><input type="button" class="art" value="&plus;" onclick="dis('&plus;')"></td>
+                    <td><input type="button" class="art" value="&minus;" onclick="dis('&minus;')"></td>
+                </tr>
+                <!--Row 6-->
+                <tr>
+                    <td><input type="button" value="." onclick="dis('.')"></td>
+                    <td><input type="button" class="numb" value="0" onclick="dis(0)"></td>
+                    <td><input type="button" id="equal" value="&equals;" onclick="solve()"></td>
+                    <td><input type="button" class="trig" value="atan" onClick="a_tan()"></td>
+                    <td><input type="button" value="&Pi;" onclick="dis(Math.PI)"></td>
+                    <td><input type="button" value="!" onclick="fact()"></td>
+                </tr>
+        </table>
+        
+        </div>
+    </center>
+
+</body>
+</html>

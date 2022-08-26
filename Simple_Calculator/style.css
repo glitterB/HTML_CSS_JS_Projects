@@ -1,0 +1,66 @@
+*{
+    padding: 1px;
+    margin: 25px;
+    background-color:black;
+ }
+
+ input  
+ {  
+    padding: 5px;  
+     width: 80px;  
+     margin: 5px;  
+     height: 70px;
+     border: 3px solid gray;  
+     background-color: rgb(48, 51, 48);  
+     color: white;  
+     border-radius: 5px;  
+     font-size:1.5em; 
+     font-style: oblique; 
+ }  
+ 
+ #display
+ {
+     margin: auto;
+     width: 95%;
+     border: 5px solid black;
+     border-radius: 6px;
+     padding: 10px;
+ }
+ 
+ h1
+ {
+     color:white;
+ }
+
+ #b1
+ {
+     background-color:  rgb(241, 38, 2);   
+     color:white;  
+ }
+ #del
+ {
+     background-color: rgb(250, 136, 6);
+     color:white; 
+ }
+ #equal
+ {
+     background-color: rgb(2, 153, 241);  
+     color:white; 
+ }
+
+ div{
+     font-size:1.3em;
+ }
+ .art{
+    background-color: rgb(49, 80, 99); 
+ }
+
+ .trig{
+    background-color: rgb(75, 224, 120); 
+ }
+ .r2{
+     background-color: rgb(116, 114, 32);
+ }
+ .numb{
+    background-color: rgb(75, 177, 168);
+ }
